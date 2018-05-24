@@ -14,7 +14,13 @@ and they lived at the bottom of a well.</p>
 
 soup = BeautifulSoup(html, 'lxml')
 
-a_tag = soup.select('a')
+# print(soup.prettify())
 
-for each in a_tag:
-    print(each)
+# a_tag = soup.select('p[class=title]')     # p标签并且class为title
+
+# for each in a_tag:
+#     print(each)
+
+href = soup.a               # 查找里面的链接仅对单独搜索标签有效
+
+print(href['href'])
