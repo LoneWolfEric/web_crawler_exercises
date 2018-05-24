@@ -16,7 +16,7 @@ soup = BeautifulSoup(html, 'lxml')
 
 # print(soup.prettify())
 
-# a_tag = soup.select('p[class=title]')     # p标签并且class为title
+# a_tag = soup.select('p[class=title]') # p标签并且class为title
 
 # for each in a_tag:
 #     print(each)
